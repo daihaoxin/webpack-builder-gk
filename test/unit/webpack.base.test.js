@@ -1,6 +1,5 @@
 const path = require('path');
 const { assert } = require('chai');
-const baseConfig = require('../../src/webpack.base');
 describe('webpack.base.js test case', () => {
   const baseConfig = require('../../src/webpack.base');
   // console.log(baseConfig);

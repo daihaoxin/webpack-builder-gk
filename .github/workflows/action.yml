@@ -1,0 +1,28 @@
+name: GitHub Actions Demo
+
+#on: [push, pull_request]
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: install
+      - run: npm install
+      - run: cd ./test/smoke/template
+      - run: npm install
+      - run: npm run test:smoke
+      - run: npm run coverage
+#      - name: Build and Deploy
+#        uses: JamesIves/github-pages-deploy-action@master
+#        env:
+#          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#          BRANCH: gh-pages
+#          FOLDER: build
+#          BUILD_SCRIPT: npm install && npm run build
