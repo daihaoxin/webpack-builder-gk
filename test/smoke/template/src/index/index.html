@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    <link href="../assets/meta.html?__inline">-->
+<!--    <%= require('html-inline-loader!../assets/meta.html') %>-->
+    <%= require('raw-loader?esModule=false!../assets/meta.html') %>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+<!--    <script type="text/javascript" src="../node_modules/lib-flexible/flexible.js?__inline"></script>-->
+    <script type="text/javascript">
+        <%= require('raw-loader?esModule=false!lib-flexible') %>
+    </script>
+</head>
+<body>
+
+</body>
+</html>

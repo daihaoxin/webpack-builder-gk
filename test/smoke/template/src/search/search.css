@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "QianTuMaKeShouXieTi";
+    src: url("../assets/fonts/QianTuMaKeShouXieTi-2.ttf") format("truetype");
+}
+
+/* test test test  */
+.search-text {
+    font-family: QianTuMaKeShouXieTi;
+    font-size: 20px;
+    color: #f00;
+
+    display: grid;
+    border-radius: 10px;
+}
+h1{
+    font-size: 120px;
+}
+.btn{
+    width: 500px;
+}
